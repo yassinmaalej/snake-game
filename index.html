@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ui-bar">
+        <div class="stat">Score: <span id="score">0</span></div>
+        <div class="stat">Time: <span id="time">0</span>s</div>
+        <div class="stat">Orb Timer: <span id="orb-timer">5.0</span>s</div>
+    </div>
+    
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="overlay">
+        <div id="modal">
+            <h1 id="status-text">Snake Game</h1>
+            <p id="final-score" class="hidden"></p>
+            <button id="start-btn">Start Game</button>
+            <p class="controls-hint">Use Arrow Keys to Move | Space to Pause</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
