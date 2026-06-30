@@ -11,3 +11,5 @@ while True:
 print("Leaderboard:")
 for name, id in leaderboard.items():
     print(f"{name}: {id}")
+leaderboard = sorted(leaderboard.items(), key=lambda x: x[1], reverse=True)
+print("\nSorted Leaderboard:")
